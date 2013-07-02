@@ -235,7 +235,7 @@ After the comment is edited, this variable contains end MARK of comment.")
 After the comment is edited, this variable contains C-code buffer name,
 where comment edited belonged.")
 
-(defvar c-comment-window-register ?w
+(defcustom c-comment-window-register ?w
   "*Which register to use to save window configuration."
   :type  'character
   :group 'c-comment-edit)
