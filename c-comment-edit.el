@@ -298,9 +298,9 @@ the duration of this call."
               (cons 'progn body)
               '(goto-char (min (point-max) save-point)))))
 
-(defmacro c-comment-marker (pos &optional buffer)
+(defmacro c-comment-marker (position &optional buffer)
   "Set marger at point POS in current-buffer' or optional BUFFER."
-  `(set-marker (make-marker) pos buffer))
+  `(set-marker (make-marker) ,position ,buffer))
 
 ;;; ########################################################### &Funcs ###
 
